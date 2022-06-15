@@ -1,5 +1,8 @@
 class BlogspotController < ApplicationController
     def index      
-    @title = Blogspot.all
+        @blogspots = Blogspot.all
+    end
+    def show 
+        @blogspot = Blogspot.find(params[:id])
     end
 end

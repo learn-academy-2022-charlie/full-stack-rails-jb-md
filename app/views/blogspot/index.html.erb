@@ -1,3 +1,5 @@
-<h2> How to create a webpage </h2>
-<p><%= @blogspot.title %> </p>
- end 
+<h2> Articles  </h2>
+<% @blogspots.each do |article| %>
+<%= link_to article.title, blog_path(article) %>
+<% end %>
+
