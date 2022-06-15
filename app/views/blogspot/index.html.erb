@@ -2,4 +2,6 @@
 <% @blogspots.each do |article| %>
 <%= link_to article.title, blog_path(article) %>
 <% end %>
-
+<br>
+<br>
+<%= link_to 'Add New Article', 'blogspot/new' %>

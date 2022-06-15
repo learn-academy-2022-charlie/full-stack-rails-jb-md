@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
-   root 'blogspot#index'
    get 'blogspot' => 'blogspot#index'
+   get 'blogspot/new' => 'blogspot#new' 
    get 'blogspot/:id' => 'blogspot#show', as: 'blog'
+   root 'blogspot#index'
 end
