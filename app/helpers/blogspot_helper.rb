@@ -1,0 +1,2 @@
+module BlogspotHelper
+end
