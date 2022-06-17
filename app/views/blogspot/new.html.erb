@@ -1,0 +1,19 @@
+<h2> Add new entry </h2>
+
+<%= form_with(model: @blogspot,url: 'blogspot/new') do |form| %>
+
+<br>
+<%= form.label :title %>
+<br>
+<%= form.text_field :title %> 
+<br>
+
+<%= form.label :content %>
+<br>
+<%= form.text_field :content %>
+<br>
+<%= form.submit "Add" %>
+
+<% end %>
+
+
